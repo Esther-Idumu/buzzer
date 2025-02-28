@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'navbar.html' %}
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-8">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="container">
+            <h1>Buzzes</h1>
+            {% for buzz in buzzes %}
+                <div class="alert alert-dark" role="alert">
+                    {{ buzz.body }}<br/>
+                    <small class="text-muted">
+                        {{ buzz.created_at }} By: 
+                        @{{ buzz.user.username }}
+                    </small>
+                </div>
+            {% endfor %}
+        </div>
+<div class="row">
+    <div class="col-8"><br/><br>
+        {% if form %}
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-buzz">Post a Buzz</button>
+        </form>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
+{% endblock content %}

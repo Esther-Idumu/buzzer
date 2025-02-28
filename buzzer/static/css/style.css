@@ -1,0 +1,118 @@
+*{
+    margin-top: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body.login{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a.nav-link{
+    margin-left: 40px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(0, 90, 260, 0.182);
+}
+
+.logincontainer{
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0px 10px 10px #000;
+}
+
+.signupcontainer{
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0px 10px 10px #000;
+}
+
+h1{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+label.signup{
+    margin-top: 30px;
+}
+
+input.signup{
+    margin-top: 10px;
+    margin-left: 28%;
+}
+
+input{
+    
+    border-radius: 8px;
+    border-color: #00000011;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    background-color: rgba(0, 90, 260, 0.082);
+}
+
+label{
+    margin-left: 20px;
+}
+
+button.login{
+    margin-top: 30px;
+    margin-left: 40%;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+p.login{
+    margin-top: 30px;
+    text-align: center;
+}
+
+button.signup{
+    margin-top: 20px;
+    margin-left: 40%;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+p.signup{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card{
+    margin-top: 30px;
+}
+
+.btn-buzz{
+    background-color: rgba(0, 90, 260, 0.482);
+    border-radius: 5px;
+    padding: 5px;
+    border-color: rgba(0, 0, 0, 0.365);
+}
